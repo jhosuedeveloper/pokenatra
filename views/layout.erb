@@ -9,11 +9,22 @@
 
   <div class = "containareon">
     <header>
-      <a href ="/pokemons"> HOME </a>
+
     </header>
 
     <main>
+      <div class= "menu">
+        <ul>
+        <li><a href ="/"> HOME </a></li>
+        <li><a href ="/trainers"> Trainers </a></li>
+        <li><a href ="/pokemons"> Pokemons </a></li>
+      </ul>
+      </div>
+
+      <div class = "content">
       <%=yield %>
+      </div>
+
     </main>
 
     <footer>

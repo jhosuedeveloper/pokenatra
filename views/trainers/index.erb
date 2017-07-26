@@ -1,0 +1,10 @@
+
+<h1> LIST OF TRAINERS </h1>
+<p>------------------------------</p>
+<a href= '/trainers/new'> CREATE A NEW TRAINER </a>
+<p>------------------------------</p>
+<% @trainers.each do |trainer| %>
+<div>
+ <h2><a href = '/trainers/<%=trainer.id%>'> <%=trainer.name%> </a></h2>
+</div>
+<% end %>

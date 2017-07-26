@@ -1,0 +1,10 @@
+<h2> NAME:           ---->  <%= @pokemon.name %></h2>
+
+<h2> CP:            ----->  <%=@pokemon.cp %> </h2>
+
+<h3> POKEMON TYPE:    --->  <%=@pokemon.poke_type %> </h3>
+
+<img src="<%=@pokemon.img_url %>" alt="pokemon">
+
+<br><br>
+<a href="/pokemons/<%=@pokemon.id%>/edit" > EDIT:  <%=@pokemon.name %> </a>

@@ -64,14 +64,16 @@ get "/trainers" do
   erb :"trainers/index"
 end
 
+get "/trainers/new" do
+  erb :"trainers/new"
+end
+
 get "/trainers/:id" do
  @trainer = Trainer.find(params[:id])
  erb :"trainers/show"
 end
 
-get "/trainers/new" do
-  erb :"trainers/new"
-end
+
 
 post "/trainers" do
   @trainer = Trainer.create(params[:trainer])
@@ -92,5 +94,5 @@ end
 delete "/trainers/:id" do
   @trainer = Trainer.find(params[:id])
   @trainer.destroy
-  redirect ("/trainers/#{@trainer.id}")
+  redirect ("/trainers")
 end
